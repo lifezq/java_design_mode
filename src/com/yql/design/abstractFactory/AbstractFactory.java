@@ -8,11 +8,7 @@ package com.yql.design.abstractFactory;
  * @Date 2022/5/13
  */
 public abstract class AbstractFactory {
-    public AbstractProductA createProductA() {
-        return null;
-    }
+    public abstract AbstractProductA createProductA();
 
-    public AbstractProductB createProductB() {
-        return null;
-    }
+    public abstract AbstractProductB createProductB();
 }
