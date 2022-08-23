@@ -83,4 +83,16 @@ public class SingleTonTest {
         System.out.println(instance1);
         System.out.println(instance2);
     }
+
+    @Test
+    public void testSingleton6() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        Constructor<Person> person1 = Person.class.getDeclaredConstructor(null);
+        person1.setAccessible(true);
+        Person instance1 = person1.newInstance();
+        Constructor<Person> person2 = Person.class.getDeclaredConstructor(null);
+        person2.setAccessible(true);
+        Person instance2 = person2.newInstance();
+        System.out.println(instance1);
+        System.out.println(instance2);
+    }
 }
